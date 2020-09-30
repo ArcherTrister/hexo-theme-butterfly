@@ -5,7 +5,7 @@
       ul.md-links
         each item in i.link_list
           li.md-links-item
-            a(href=item.link  title=item.name target="_blank")
+            a(href=item.link  title=item.name target="_blank" rel="external nofollow")
               if theme.lazyload.enable
                 img.lazyload(data-src=item.avatar onerror=`this.onerror=null;this.src='` + url_for(theme.lodding_bg.flink) + `'` alt=item.name )
               else
