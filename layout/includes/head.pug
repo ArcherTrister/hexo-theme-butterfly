@@ -36,6 +36,8 @@ if page.hide == true
 
 script(src=url_for(theme.CDN.js_cookies))
 
+script(src=url_for('/js/baidu.js'))
+
 if (theme.darkmode && theme.darkmode.enable) || theme.autoChangeMode !== false
   include ./head/darkmode.pug
 
